@@ -596,10 +596,6 @@ body{
     padding: 80px 20px;
   }
 
-  .main{
-    background: url(images/bg1.jpg)no-repeat;
-  }
-
   .main .content h2{
     font-size: 1em;
   }
@@ -640,6 +636,12 @@ body{
 
   .contact-form{
     padding: 35px 40px;
+  }
+}
+
+@media(max-width: 480px){
+  .main{
+    background: url(images/bg1.jpg)no-repeat;
   }
 }
 
