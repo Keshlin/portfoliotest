@@ -641,7 +641,7 @@ body{
 
 @media(max-width: 480px){
   .main{
-    background-image: url(images/bg1.jpg)no-repeat;
+    background-image: url(images/bg1.jpeg)no-repeat;
   }
 }
 
