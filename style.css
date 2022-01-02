@@ -643,6 +643,11 @@ body{
   .main{
     background: url(images/bg1.jpg)no-repeat;
   }
+  .main .content {
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
 }
 
 .scrollToTop-btn{
