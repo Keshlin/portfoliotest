@@ -655,12 +655,10 @@ body{
 .media-icons {
     padding-left: 15px;
 }
-  .about .content .col-right .content-title {
+
+  .about{
     text-align: center;
-}
-  .about .content .col-right .paragraph-text {
-    text-align: center;
-}
+  }
 }
 
 .scrollToTop-btn{
