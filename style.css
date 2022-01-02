@@ -655,10 +655,12 @@ body{
 .media-icons {
     padding-left: 15px;
 }
-
   .about{
     text-align: center;
   }
+  .skills .content .col-left {
+    text-align: center;
+}
 }
 
 .scrollToTop-btn{
