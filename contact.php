@@ -12,7 +12,7 @@ if(isset($_POST['submit']))
 
 
 	$url = 'https://www.google.com/recaptcha/api/siteverify';
-	$secretKey = "6Lc3S-kdAAAAAGimYC9OUObC_6vH32ZDRSjgIHHU ";
+	$secretKey = "6Lcu7_AdAAAAAE2WP5i582DI8JP7dgPc6Y3Pfrbd ";
 
 	$response = file_get_contents($url."?secret=".$secretKey."&response=".$_POST['g-recaptcha-response']."&remoteip=".$_SERVER['REMOTE_ADDR']);
 
