@@ -6,6 +6,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
 
@@ -225,23 +226,32 @@
           
         </div>
         <div class="row">
-          <div class="contact-form reveal">
+          <form class="contact-form reveal" action="contact.php " method="post">
             <h3>Send Message</h3>
             <div class="input-box">
-              <input type="text" name="" value="" placeholder="Name">
+              <input type="text" name="name" placeholder="Name" required>
             </div>
             <div class="input-box">
-              <input type="text" name="" value="" placeholder="Email">
+              <input type="text" name="mail" placeholder="Email" required>
             </div>
             <div class="input-box">
-              <textarea name="name" rows="8" cols="80" placeholder="Message"></textarea>
+              <textarea name="message" placeholder="Message" required></textarea>
             </div>
+
+            <div class="g-recaptcha" data-sitekey="6Lc3S-kdAAAAAPQzdrocDIe1kc8Twhsmi9EFZiOO"></div>
+
             <div class="input-box">
-              <input type="submit" class="send-btn" name="" value="Send">
+              <input type="submit" class="send-btn" name="submit" value="Send">
             </div>
-          </div>
+            <?php if(isset($_GET['CaptchaPass'])){ ?>
+          <div class="output">Message Sent</div>
+          <?php } ?>
+          <?php if(isset($_GET['CaptchaFail'])){ ?>
+          <div class="output1">Recapture Required!</div>
+          <?php } ?>
+        
+          </form>
         </div>
-      </div>
     </section>
 
     <footer class="footer">

@@ -454,7 +454,7 @@ body{
   background: #fff;
   max-width: 600px;
   margin-top: 50px;
-  padding: 50px;
+  padding: 45px;
   border-radius: 10px;
   box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
 }
@@ -498,10 +498,22 @@ body{
   border: none;
   cursor: pointer;
   transition: 0.5s ease;
+  margin-top: 5px;
 }
 
 .contact-form .input-box .send-btn:hover{
   background: #235bf6;
+}
+.g-recaptcha{
+  margin-bottom: 20px;
+}
+.output{
+  font-size: 5px;
+  color: green;
+}
+.output1{
+  font-size: 5px;
+  color: red;
 }
 
 .footer{
