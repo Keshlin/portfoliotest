@@ -53,6 +53,21 @@ section{
   letter-spacing: 1px;
 }
 
+.animated-text h3:nth-child(1){
+  animation: text-move 10s infinite;
+}
+
+@keyframes text-move{
+  0%{
+    margin-top: 0;
+  }
+  25%{
+    margin-top: -70px;
+  }
+  100%{
+    margin-top: 0;
+  }
+}
 
 .btn{
   color: #fff;
