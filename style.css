@@ -677,6 +677,9 @@ body{
   .title p {
     text-align: center;
 }
+.contact-form {
+    padding: 25px 25px;
+}
 }
 
 .scrollToTop-btn{
